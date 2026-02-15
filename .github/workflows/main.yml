@@ -16,7 +16,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: frontend   # 👈 run inside frontend folder
 
     steps:
       - uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/dist
+          path: frontend/dist   # 👈 upload built files
 
   deploy:
     needs: build
