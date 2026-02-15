@@ -15,8 +15,8 @@ function Home() {
 
       {/* 🕊 Bird in Center */}
       <img
-        src="/bird.png"
-        alt="bird"
+        src={`${import.meta.env.BASE_URL}bird.png`}
+  alt="bird"
         style={{
           position: "absolute",
           width: "300px",
